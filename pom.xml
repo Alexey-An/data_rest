@@ -77,6 +77,12 @@
 			<artifactId>junit-platform-runner</artifactId>
 			<version>${junit.platform.version}</version>
 		</dependency>
+		<!--Allure Reporting Dependencies-->
+		<dependency>
+			<groupId>io.qameta.allure</groupId>
+			<artifactId>allure-junit5</artifactId>
+			<version>${allure-junit5.version}</version>
+		</dependency>
 
 	</dependencies>
 
@@ -109,7 +115,7 @@
 					<systemProperties>
 						<property>
 							<name>allure.results.directory</name>
-							<value>${project.basedir}/allure-results</value>
+							<value>${project.basedir}/allure-report</value>
 						</property>
 						<property>
 							<name>junit.jupiter.extensions.autodetection.enabled</name>
